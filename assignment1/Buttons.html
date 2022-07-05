@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add two buttons. one will add a row at the top and another will add a row at the bottom with data. </title>
+        <style>
+             th {
+              width:100px;
+            }
+            table, th, td {
+  border: 1px solid red;
+}
+.bottom {
+margin-top:20px;
+position:fixed;
+margin-left:120px;
+}
+.top {
+
+    margin-top:20px;
+position:fixed;
+margin-left:270px;
+}
+            </style>
+        </head>
+        <body>
+            <table  border="1" id="table">
+                <tr>
+                    <th >SL.NO</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>Country</th>
+                  </tr>
+                <tr class="tr">
+                    <td>1</td>
+                    <td>Gudiya</td>
+                    <td>kumari</td>
+                    <td>Gaya</td>
+                    <td>India</td>
+                  </tr>
+                  <tr class="tr">
+                    <td>2</td>
+                    <td>Somiya</td>
+                    <td>Raj</td>
+                    <td>Gaya</td>
+                    <td>India</td>
+                  </tr>
+                  <tr class="tr">
+                    <td>3</td>
+                    <td>Anshilka</td>
+                    <td>chandra</td>
+                    <td>Patna</td>
+                    <td>India</td>
+                  </tr>
+                  <tr class="tr">
+                    <td>4</td>
+                    <td>Anjali</td>
+                    <td>singh</td>
+                    <td>Patna</td>
+                    <td>India</td>
+                  </tr>
+                  <tr class="tr">
+                    <td>5</td>
+                    <td>Anky</td>
+                    <td>singh</td>
+                    <td>Patna</td>
+                    <td>India</td>
+                  </tr>
+                </table>
+       <div onclick="bottomRow()" class="bottom">
+        <button>Add row to bottom</button>
+        </div>
+        <div onclick="topRow()">
+            <button class="top">Add row to top</button>
+            </div>
+            <script src="D:\Assignment\assignment1\js\button.js"></script>
+        </body>
+</html>

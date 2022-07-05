@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> English sentence </title>
+</head>
+<script>
+  var letters ="^[a-zA-Z]+$";
+function validation()
+{
+if(!sentence.value.match(letters))
+{
+  alert ("Please Enter only English Sentence");
+  }
+
+        }
+      
+</script>
+<body>
+
+  <form  onsubmit="return validation()">
+    <div>
+      <label for="sentence">Enter a sentence :</label>
+      <input type="text" id="sentence" name="sentence"><br><br>
+      <button>Submit</button>
+    </div>
+  </form>
+  

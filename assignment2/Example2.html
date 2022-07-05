@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World!</title>
+         <style>
+            #sentence { 
+                margin-top :-32px;
+                margin-left: 70px;
+            }
+            #letter { 
+                margin-top :-35px;
+                margin-left: 50px;
+            }
+            #Result { 
+                margin-top :-35px;
+                margin-left: 50px;
+            }
+             </style>
+    </head>
+    <body>
+        <div>
+            <p>Sentence:</p>
+            <p id="sentence"></p>
+            <p>letter:</p>
+            <p id="letter"></p>
+            <p>Result:</p>
+            <p id="Result"></p>
+            </div> 
+            <script>
+                var text = "Hello World!";
+                var sentence = text.substring(0);// Hello World!
+                var letter = text.charAt(8);//r
+                var result = text.substring(6,11)+1;//ld!
+                document.getElementById("sentence").innerHTML = sentence;
+                document.getElementById("letter").innerHTML = letter;
+                document.getElementById("Result").innerHTML = result;
+                </script>  
+        </body>
+    </html>

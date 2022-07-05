@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> letter</title>
+</head>
+<script>
+  var letters ="^[a-zA-Z]+$";
+function validation()
+{
+if(!sentence.value.match(letters))
+{
+  alert ("The letter does not exist in the sentence");
+  }
+
+        }
+      
+</script>
+<body>
+
+  <form  onsubmit="return validation()">
+    <div>
+      <label for="sentence">Enter a letter: </label>
+      <input type="text" id="sentence" name="sentence"><br>
+      <button>Submit</button>
+    </div>
+  </form>
+  
